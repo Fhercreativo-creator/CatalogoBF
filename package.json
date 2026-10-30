@@ -1,0 +1,26 @@
+{
+  "name": "burgos-financial",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "start": "npm run dev",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test scripts/catalog.test.mjs",
+    "format": "prettier --write src scripts index.html vite.config.js README.md"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.2",
+    "prettier": "3.9.10",
+    "vite": "8.3.5"
+  }
+}
